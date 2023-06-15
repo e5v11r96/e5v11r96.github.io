@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font: 16px/1.4 'Lexton', sans-serif; color:#bc929c;
+  
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color:#bc929c;
+}
+
+a:hover{
+  color:#8D2748;
+}
+
+a:active{
+  color:#bc929c;
+}
+
+h1 {
+  font-family: Lekton, 'Lekton-Bold', 'Lekton-Italic';
+  font-size: 20rem;
+  line-height: 1.22em;    
+  padding-top: 0.278em;
+  text-align: center;
+  color:#ccc;
+  margin-left: 32px
+}
+
+h2 {
+  font-family: Lekton, 'Lekton-Bold', 'Lekton-Italic';
+  font-size: 4.25em;
+  line-height: 1.22em;
+  padding-top: 0.278em;
+}
+
+h3 {
+  font-family: Lekton, 'Lekton-Bold', 'Lekton-Italic';
+  font-size: 1.50em;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.00em;
+  line-height: 1.38em;
+  padding-top: 0.375em;
+  margin-bottom: 1.00em;
+}
+.interactivo {
+  color:#bc929c; 
+}
+
+h4.overline{
+  font-size:1.85em;
+  color:#999;
+  margin-bottom:0;
+  margin-top: 0;
+  padding-bottom: 0;
+  font-weight:600;
+  text-transform: uppercase;
+  font-family: "Montserrat Thin", "Montserrat Thin Italic"
+}
+
+button{
+  color:white;
+  padding:10px;
+  border: none;
+  font-size: 1em;
+  background-color: Crimson;
+  background: linear-gradient(to right, tomato, Crimson);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+hr{ 
+  height:1px;border-width:0;color:#ddd;background-color:#ccc;
+}
+
+.container {
+   display: grid;
+   grid-auto-flow: dense;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   row-gap: 3rem;
+   column-gap: normal;
+   padding: 20px 0px;
+   margin-left:32px;
+   margin-right:32px;
+  
+}
+
+
+a.elemento:link, a.elemento:visited{
+  color:#333;
+}
+
+div.elemento:hover {
+  border: 1px solid #777;
+}
+
+.icono{
+  display:inline-block;
+  width:30px;
+  padding-right:px;
+  padding-bottom:2px;
+  vertical-align:middle;
+}
+
+
+.elemento h2, .elemento h3, .elemento h4, .elemento p{
+  padding-left:.5rem;
+  padding-right:1rem;
+}
+
+.elemento h2{
+  color:#bc929c;
+  padding-top:0;
+}
+
+.uno {
+  grid-column: 1/ span 6;
+}
+
+.dos {
+  grid-column: 9 / span 4;
+}
+
+.tres {
+  grid-column: 1/ span 4;
+}
+
+.cuatro {
+  grid-column:9/ span 4 ;
+}
+
+.cinco {
+  grid-column:1/ span 4;
+}
+
+.seis {
+  grid-column: 9/ span 4;
+}
+
+.siete {
+  grid-column:1/ span  4;
+}
+
+.ocho {
+  grid-column: 9/ span  4;
+}
+
+.nueve {
+  grid-column: 1/ span 5;
+}
+
+.ten{
+	grid-column: 6/ span 10;
+}
+		
+.elemento img {
+  width: 100%;
+}
+
+footer{
+ width:100%;
+ background-color: #312d2d;
+ background: linear-gradient(to right,#e3d1d5,#8d2748 );
+}
+
+footer p{ 
+ font-size:0.8em;
+ text-align:center; 
+ padding:15px;
+ color: #312d2d;
+ font-family: Lekton, "Lekton-Bold", "Lekton-Italic"
+}
+
+footer img{
+  text-align:center;
+  width: 32px;
+  padding:5px;
+}
+img {
+	width: 100%;
+	
+}
+
+
+@media (max-width: 913px) {
+ 
+   .container {
+   display:block;
+   margin-left: 15px; 
+   margin-right: 15px;
+  
+  }
+   .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho, .nueve, .ten {grid-column:1 / 1}
+   h1 {margin-left: 15px;}
+    
+}
